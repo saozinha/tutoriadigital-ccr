@@ -6,10 +6,9 @@ import '../App.css'
 export default function Footer(props) {
     return ( 
         <Grid item >
-            <div className='App_footer'> 
-               <hr />
-               <p> Autor  >>  Conceicao Lourenco   </p>
-               <p> <a href="https://github.com/saozinha/softplayer-try"> Show the Code </a> </p> 
+            <div className='App_footer'>  
+               <p> Copyright © 2021 tutoriaDigital   </p>
+               <p> <a href="https://github.com/saozinha/tutoriadigital-ccr"> Show the Code </a> </p> 
             </div>
         </Grid> 
     )

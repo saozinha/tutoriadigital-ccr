@@ -3,7 +3,7 @@ import "./styles.css";
 import './App.css';
 import SideBar from "./components/sidebar"; 
 import Footer from './components/Footer' 
- 
+import Header from './components/header'
 
 function App() {
   return ( 
@@ -13,11 +13,7 @@ function App() {
           <br />
           
           <header className="App-header">
-              <div id="page-wrap">
-                <h1>Tutoria Digital  </h1>
-                <h2>Aceitamos o desafio da CCR !</h2>
-              
-              </div>
+              <Header /> 
           </header>
 
 
@@ -28,5 +24,3 @@ function App() {
 }
 
 export default App; 
-
-

@@ -15,7 +15,7 @@ import { Formik, Form } from 'formik';
 import servicesApi from '../services/servicesApi';
 import Footer from '../components/Footer' 
 import * as Yup from 'yup';
-
+ 
 
 // Validações
 const validationSchema = Yup.object().shape({
@@ -96,181 +96,181 @@ const FormRegister = props => {
   }
   
  return (
-   <>
+   <> 
     <div className="App">
 
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />  
-      <br />
- 
-        <Grid container className="App-container"
-            spacing={2}
-            direction="row"
-            alignItems="center"
-            justify="center"> 
+      
+      <Grid container
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
           
-            <Grid item xs={10} md={10} > 
+         <Grid item xs={12}>  
 
-            <Grid item xs={12} md={8}>
+                <span className="textlogo">  <h1>Tutoria Digital  </h1> </span>
+                <span  > 
+                        <p > Encontre um tutor para chamar de seu !</p> 
+                        <p >Aqui você pode aprender no seu tempo e do seu jeito </p> 
+                </span>
+          </Grid>
 
-              <h1> Novo Registro </h1>
+          <Grid item xs={12}>    
 
-              <br />
-              </Grid>
+                  <Formik
+                    initialValues={initialValues}
+                    validationSchema={validationSchema}
+                    onSubmit={(values) => {
+                            handleSubmit(values);
+                        }}
+                  >
+                    {({ values, touched, errors, handleChange, handleBlur }) => (
+                      <Form  >
 
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={(values) => {
-                      handleSubmit(values);
-                  }}
-            >
-              {({ values, touched, errors, handleChange, handleBlur }) => (
-                <Form  >
+                        <Grid container spacing={3}>  
 
-                  <Grid container spacing={3}>  
+                            <Grid item xs={12} md={8}>
+                                <TextField
+                                  name="name"
+                                  label="Nome Completo"
+                                  value={values.name}
+                                  fullWidth
+                                  size="small"
+                                  error={errors.name && touched.name}
+                                  helperText={errors.name && touched.name && errors.name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  variant="outlined"
+                                />
+                              </Grid>
 
-                      <Grid item xs={12} md={8}>
-                          <TextField
-                            name="name"
-                            label="Nome Completo"
-                            value={values.name}
-                            fullWidth
-                            size="small"
-                            error={errors.name && touched.name}
-                            helperText={errors.name && touched.name && errors.name}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            variant="outlined"
-                          />
-                        </Grid>
+                              <Grid item xs={12} md={5}>
+                                <TextField
+                                  name="email"
+                                  label="Email"
+                                  value={values.email}
+                                  fullWidth
+                                  size="small"
+                                  error={errors.email && touched.email}
+                                  helperText={errors.email && touched.email && errors.email}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  variant="outlined"
+                                />
+                              </Grid>
 
-                        <Grid item xs={12} md={5}>
-                          <TextField
-                            name="email"
-                            label="Email"
-                            value={values.email}
-                            fullWidth
-                            size="small"
-                            error={errors.email && touched.email}
-                            helperText={errors.email && touched.email && errors.email}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            variant="outlined"
-                          />
-                        </Grid>
-
-                        <Grid item xs={12} md={3}>
-                          <InputMask
-                            mask="999.999.999-99"
-                            value={values.cpf}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                          >
-                            {() => (
-                              <TextField
-                                name="cpf"
-                                label="CPF"
-                                value={values.cpf}
-                                helperText={errors.cpf && touched.cpf && errors.cpf}
-                                fullWidth
-                                size="small"
-                                error={errors.cpf && touched.cpf}
-                                variant="outlined"
-                              />
-                                          )}
-                          </InputMask>
-                        </Grid>
-          
-                        <Grid item xs={12} md={5}>
-                          <InputMask
-                            mask="99/99/9999"
-                            value={values.birthday}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                          >
-                            {() => (
-                              <TextField
-                                name="birthday"
-                                label="Data de Nascimento"
-                                value={values.birthday}
-                                fullWidth
-                                size="small"
-                                error={errors.birthday && touched.birthday}
-                                helperText={errors.birthday && touched.birthday && errors.birthday}
-                                variant="outlined"
-                              />
-                                          )}
-                          </InputMask>
-                        </Grid>
-
-
-                        <Grid item xs={12} md={3}>
-                            <FormControl component="fieldset" fullWidth> 
-
-                                <RadioGroup
-                                  arya-label="gender" 
-                                  id="gender"
-                                  name="gender"
-                                  value={selectedRadio}
-                                  onChange={handleRadioChange}   
+                              <Grid item xs={12} md={3}>
+                                <InputMask
+                                  mask="999.999.999-99"
+                                  value={values.cpf}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
                                 >
-                                  <FormControlLabel
-                                    label="Feminino" 
-                                    value="FEMALE"
-                                    control={<Radio color="primary" />} 
-                                  />
-                                  <FormControlLabel
-                                    label="Masculino"
-                                    value="MALE"
-                                    control={<Radio color="primary" />}
-                                  />
-                                </RadioGroup>
-                            </FormControl>
-                        </Grid>
-    
-                        <Grid item xs={12} md={8}>
-                          <TextField
-                            name="placeBirth"
-                            label="Naturalidade"
-                            value={values.placeBirth}
-                            fullWidth
-                            size="small"
-                            error={errors.placeBirth && touched.placeBirth}
-                            helperText={errors.name && touched.placeBirth && errors.placeBirth}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            variant="outlined"
-                          />
-                        </Grid>
+                                  {() => (
+                                    <TextField
+                                      name="cpf"
+                                      label="CPF"
+                                      value={values.cpf}
+                                      helperText={errors.cpf && touched.cpf && errors.cpf}
+                                      fullWidth
+                                      size="small"
+                                      error={errors.cpf && touched.cpf}
+                                      variant="outlined"
+                                    />
+                                                )}
+                                </InputMask>
+                              </Grid>
+                
+                              <Grid item xs={12} md={5}>
+                                <InputMask
+                                  mask="99/99/9999"
+                                  value={values.birthday}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                >
+                                  {() => (
+                                    <TextField
+                                      name="birthday"
+                                      label="Data de Nascimento"
+                                      value={values.birthday}
+                                      fullWidth
+                                      size="small"
+                                      error={errors.birthday && touched.birthday}
+                                      helperText={errors.birthday && touched.birthday && errors.birthday}
+                                      variant="outlined"
+                                    />
+                                                )}
+                                </InputMask>
+                              </Grid>
 
-                        <Grid item xs={12} md={8}>
-                          <TextField
-                            name="countryBirth"
-                            label="País de origim"
-                            value={values.countryBirth}
-                            fullWidth
-                            size="small"
-                            error={errors.countryBirth && touched.countryBirth}
-                            helperText={errors.name && touched.countryBirth && errors.countryBirth}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            variant="outlined"
-                          />
-                        </Grid>
-                        
-                        <Grid item xs={12} md={8}> 
-                            <Button type="submit" variant="contained" color="primary"  fullWidth
-                            size="small" >
-                                Salvar
-                            </Button> 
-                        </Grid> 
-                      </Grid>
-                </Form>
-                  )}
-              </Formik> 
-              </Grid>
+
+                              <Grid item xs={12} md={3}>
+                                  <FormControl component="fieldset" fullWidth> 
+
+                                      <RadioGroup
+                                        arya-label="gender" 
+                                        id="gender"
+                                        name="gender"
+                                        value={selectedRadio}
+                                        onChange={handleRadioChange}   
+                                      >
+                                        <FormControlLabel
+                                          label="Feminino" 
+                                          value="FEMALE"
+                                          control={<Radio color="primary" />} 
+                                        />
+                                        <FormControlLabel
+                                          label="Masculino"
+                                          value="MALE"
+                                          control={<Radio color="primary" />}
+                                        />
+                                      </RadioGroup>
+                                  </FormControl>
+                              </Grid>
+          
+                              <Grid item xs={12} md={8}>
+                                <TextField
+                                  name="placeBirth"
+                                  label="Naturalidade"
+                                  value={values.placeBirth}
+                                  fullWidth
+                                  size="small"
+                                  error={errors.placeBirth && touched.placeBirth}
+                                  helperText={errors.name && touched.placeBirth && errors.placeBirth}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  variant="outlined"
+                                />
+                              </Grid>
+
+                              <Grid item xs={12} md={8}>
+                                <TextField
+                                  name="countryBirth"
+                                  label="País de origim"
+                                  value={values.countryBirth}
+                                  fullWidth
+                                  size="small"
+                                  error={errors.countryBirth && touched.countryBirth}
+                                  helperText={errors.name && touched.countryBirth && errors.countryBirth}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  variant="outlined"
+                                />
+                              </Grid>
+                              
+                              <Grid item xs={12} md={8}> 
+                                  <Button type="submit" variant="contained" color="primary"  fullWidth
+                                  size="small" >
+                                      Salvar
+                                  </Button> 
+                              </Grid> 
+                            </Grid>
+                      </Form>
+                        )}
+                    </Formik>  
+                  </Grid>
             </Grid>
-
             <Footer pageWrapId={"page-wrap"} /> 
         </div>
       </>

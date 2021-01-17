@@ -81,3 +81,37 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.App_header {
+  background: #FFF;
+  padding: 2.5em 1.5em 0;
+
+}
+
+.App_footer {
+  clear: both;
+  padding: 2.5em 1.5em 0;
+  color: #2e0c57;
+}
+
+.App_header img {
+    width: 50%;
+    height: auto;
+}
+
+.btAcessar {
+  align-items: flex-end;
+  padding: 15px;
+  clear: both;
+}
+
+.textFluid {
+  width: 50%;
+  color: #2f1058;
+}
+
+.textlogo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large; 
+  color: #4b0f99;
+}
