@@ -13,7 +13,7 @@
 ![Menu](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/menu.png?raw=true) 
 
  - print the page Home
-![Home](https://github.com/saozinha/tutoriadigital-ccr/tree/main/hack-ccr/blob/master/img/home.png?raw=true) 
+![Home](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/home.png?raw=true) 
 
  - print the page Form 
-![Form Cad](https://github.com/saozinha/tutoriadigital-ccr/tree/main/hack-ccr/blob/master/img/cadastro.png?raw=true) 
+![Form Cad](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/cadastro.png?raw=true) 
