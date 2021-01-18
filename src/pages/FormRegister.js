@@ -102,7 +102,7 @@ const FormRegister = props => {
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />  
       
       <Grid container
-          direction="row"
+          direction="co"
           justify="center"
           alignItems="center"
         >

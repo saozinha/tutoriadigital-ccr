@@ -94,12 +94,13 @@ body {
   color: #2e0c57;
 }
 
-.App_header img {
-    width: 50%;
+.App_header img { 
+    width: 40%;
     height: auto;
 }
 
-.btAcessar {
+
+.App_header .btAcessar {
   align-items: flex-end;
   padding: 15px;
   clear: both;
