@@ -1,7 +1,7 @@
- #Tutoria Digital 
+ ## Tutoria Digital 
 
- ## Proposta para oo hackatohn da CCR em parceria com a Shawee
-
+ ## Proposta para o hackatohn da CCR em parceria com a Shawee
+ 
  # Time 135 
   - Conceição Lourenco
   - Evelyn Helena 
@@ -9,11 +9,10 @@
   - Juciely Araújo
   - Pamela Feijó 
  
- - print the page menu
-![Menu](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/menu.png?raw=true) 
 
- - print the page Home
+# print the page Home
 ![Home](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/home.png?raw=true) 
 
- - print the page Form 
+
+# print the page Form 
 ![Form Cad](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/cadastro.png?raw=true) 
