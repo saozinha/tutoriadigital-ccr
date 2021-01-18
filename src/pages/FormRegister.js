@@ -100,23 +100,7 @@ const FormRegister = props => {
     <div className="App">
 
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />  
-      
-      <Grid container
-          direction="co"
-          justify="center"
-          alignItems="center"
-        >
-          
-         <Grid item xs={12}>  
-
-                <span className="textlogo">  <h1>Tutoria Digital  </h1> </span>
-                <span  > 
-                        <p > Encontre um tutor para chamar de seu !</p> 
-                        <p >Aqui você pode aprender no seu tempo e do seu jeito </p> 
-                </span>
-          </Grid>
-
-          <Grid item xs={12}>    
+ 
 
                   <Formik
                     initialValues={initialValues}
@@ -128,7 +112,21 @@ const FormRegister = props => {
                     {({ values, touched, errors, handleChange, handleBlur }) => (
                       <Form  >
 
-                        <Grid container spacing={3}>  
+                         
+                      <Grid container spacing={3}
+                          justify="center"
+                          alignItems="center"
+                        >
+                          
+                                <Grid item xs={12}>  
+
+                                      <span className="textlogo">  <h1>Tutoria Digital  </h1> </span>
+                                      <span  > 
+                                              <p > Encontre um tutor para chamar de seu !</p> 
+                                              <p >Aqui você pode aprender no seu tempo e do seu jeito </p> 
+                                      </span>
+
+                                </Grid>
 
                             <Grid item xs={12} md={8}>
                                 <TextField
@@ -265,12 +263,10 @@ const FormRegister = props => {
                                       Salvar
                                   </Button> 
                               </Grid> 
-                            </Grid>
+                            </Grid> 
                       </Form>
                         )}
                     </Formik>  
-                  </Grid>
-            </Grid>
             <Footer pageWrapId={"page-wrap"} /> 
         </div>
       </>
