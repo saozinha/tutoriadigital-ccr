@@ -8,3 +8,12 @@
   - Gleice Fronteira
   - Juciely Araújo
   - Pamela Feijó 
+ 
+ - print the page menu
+![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/menu.png?raw=true) 
+
+ - print the page Home
+![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/home.png?raw=true) 
+
+ - print the page Form 
+![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/cadastro.png?raw=true) 
