@@ -10,10 +10,10 @@
   - Pamela Feijó 
  
  - print the page menu
-![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/menu.png?raw=true) 
+![Menu](https://github.com/saozinha/tutoriadigital-ccr/blob/master/src/img/menu.png?raw=true) 
 
  - print the page Home
-![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/home.png?raw=true) 
+![Home](https://github.com/saozinha/tutoriadigital-ccr/tree/main/hack-ccr/blob/master/img/home.png?raw=true) 
 
  - print the page Form 
-![print screeen](https://github.com/saozinha/tutoria_digital/tree/main/hack-ccr/blob/master/img/cadastro.png?raw=true) 
+![Form Cad](https://github.com/saozinha/tutoriadigital-ccr/tree/main/hack-ccr/blob/master/img/cadastro.png?raw=true) 
